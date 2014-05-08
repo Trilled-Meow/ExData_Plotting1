@@ -4,7 +4,7 @@ data <- read.table(file = "household_power_consumption.txt", sep = ";",
                    nrow = 1, header = TRUE, sep = ";")))
 
 
-png("plot1.png", width = 480, height = 480, bg = "transparent")
+png("plot1.png", width = 480, height = 480)
 hist(data$Global_active_power, col = "red", main = "Global Active Power", 
      xlab = "Global Active Power (kilowatts)", ylab = "Frequency")
 dev.off()

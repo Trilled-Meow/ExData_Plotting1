@@ -5,7 +5,7 @@ data <- read.table(file = "household_power_consumption.txt", sep = ";",
 
 datetime <- strptime(paste(data$Date, data$Time), format = '%d/%m/%Y %H:%M:%S')
 
-png("plot4.png", width = 480, height = 480, bg = "transparent")
+png("plot4.png", width = 480, height = 480)
 
 par(mfrow = c(2, 2))
 

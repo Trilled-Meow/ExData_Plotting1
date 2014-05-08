@@ -3,7 +3,7 @@ data <- read.table(file = "household_power_consumption.txt", sep = ";",
                    colnames(read.table("household_power_consumption.txt",
                    nrow = 1, header = TRUE, sep = ";")))
 
-png("plot3.png", width = 480, height = 480, bg = "transparent")
+png("plot3.png", width = 480, height = 480)
 
 dateTime <- strptime(paste(data$Date, data$Time), format = '%d/%m/%Y %H:%M:%S')
 
